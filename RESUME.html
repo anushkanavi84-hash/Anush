@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Resume — Anush K</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  
+  <style>
+    :root {
+      --bg: #F5F5DC;           
+      --panel-bg: #FFFFFF;      
+      --accent: #786C3B;        
+      --accent-light: #C9C4B5;  
+      --text-dark: #444;
+      --text-light: #FFFFFF;
+      --max-width: 1000px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--accent);
+      color: var(--text-light);
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-light);
+    }
+
+    main {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-top: 30px;
+      background: var(--panel-bg);
+      border-radius: 12px;
+      display: flex;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+    }
+
+    .sidebar {
+      width: 300px;
+      background: var(--accent);
+      color: var(--text-light);
+      padding: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+    .sidebar .profile-pic {
+      
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 20px auto;
+      color: var(--text-light);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--accent-light);
+      padding-bottom: 8px;
+    }
+
+    .sidebar .contact, .sidebar .skills, .sidebar .certificates, .sidebar .languages {
+      margin-bottom: 25px;
+    }
+
+    .skills span, .certificates li, .languages span {
+      display: inline-block;
+      background: var(--panel-bg);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 12px;
+      margin: 4px 4px 0 0;
+      font-size: 0.85rem;
+    }
+
+    .certificates ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .content h1 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .content section {
+      margin-bottom: 25px;
+    }
+
+    .content section h3 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .content section ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .content section p {
+      line-height: 1.5;
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      color: var(--text-dark);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Anush K</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Bio-Data</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <div class="profile-pic">
+      <img src="C:\Users\vijay\Desktop\Anush\WEB PGMS"></image>
+      </div>
+      <h2>Contact</h2>
+      <p><strong>DOB:</strong>14/06/2005<br/>
+         📍Gadag,Karnataka,India<br/>
+         📧your-anushkanavi84@gmail.com<br/>
+         📞+91-6363732171</p>
+
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>C</span>
+        <span>HTML</span>
+      </div>
+
+      <h2>Certificates</h2>
+      <div class="certificates">
+        <ul>
+          <li>C Programming — IIT Bombay</li>
+          <li>Java Training Certification</li>
+        </ul>
+      </div>
+
+      <h2>Languages</h2>
+      <div class="languages">
+        <span>Kannada</span>
+        <span>English</span>
+        <span>Hindi</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Career Objective</h1>
+      <section>
+        <p>To apply my computer science knowledge and programming skills in real-world projects while continuously learning and contributing effectively.</p>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <ul>
+          <li><strong>B.E (CSE)</strong> — Ongoing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Projects</h3>
+        <ul>
+          <li>Canteen Management System — HTML, CSS</li>
+          <li>Simple Calculator — HTML, CSS, JavaScript</li>
+          <li>Gamified Learning Website — HTML, CSS, JavaScript</li>
+        </ul>
+      </section>
+
+      
+    </div>
+  </main>
+
+  <footer>Anush Kanavi— &COPY;All Rights Reserved</footer>
+</body>
+</html>
